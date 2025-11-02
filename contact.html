@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Jane Developer</title>
+  <meta name="description" content="Contact Jane Developer for projects or consulting." />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Home"><svg width="36" height="36" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="currentColor"></rect></svg><span class="brand">Jane Dev</span></a>
+      <button class="nav-toggle" id="navToggle4" aria-controls="primaryNav4" aria-expanded="false" aria-label="Toggle navigation"><span class="hamburger"></span></button>
+      <nav id="primaryNav4" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container contact-section" aria-labelledby="contact-heading">
+      <h1 id="contact-heading">Get in touch</h1>
+      <form id="contactForm" class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <!-- Netlify form attributes included as optional hosting-friendly feature -->
+        <input type="hidden" name="form-name" value="contact">
+        <p class="visually-hidden"><label>Don’t fill: <input name="bot-field"></label></p>
+
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required minlength="2">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required minlength="10"></textarea>
+
+        <button class="btn" type="submit">Send</button>
+        <div id="formStatus" role="status" aria-live="polite" class="form-status"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year4"></span> Jane Dev</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> Purity Osiri — Portfolio</title>
+  <meta name="description" content="Portfolio of Jane Developer — Web Developer & Frontend Engineer." />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Jane Developer Home">
+        <!-- simple inline SVG logo -->
+        <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="4" fill="currentColor"></rect></svg>
+        <span class="brand">Jane Dev</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="primaryNav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Build fast, accessible web experiences.</h1>
+          <p>I'm Jane — a front-end developer specializing in interactive UI, performance, and accessible design.</p>
+          <p>
+            <a class="btn" href="projects.html">See Projects</a>
+            <a class="btn btn-outline" href="contact.html">Hire me</a>
+          </p>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <img src="images/hero.jpg" alt="Illustration of developer working on laptop">
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features container" id="features" aria-labelledby="features-heading">
+      <h2 id="features-heading">What I do</h2>
+      <div class="grid grid-3">
+        <article class="card reveal">
+          <h3>Responsive Interfaces</h3>
+          <p>Design and code flexible layouts that work across devices.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>Interactive JS</h3>
+          <p>Accessible interactivity: forms, filters, animations with performance in mind.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>Performance First</h3>
+          <p>Lightweight assets, optimized images, and measurable speed improvements.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Featured projects -->
+    <section class="projects container" id="featured-projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Featured Projects</h2>
+      <div class="grid grid-3">
+        <article class="project-card reveal">
+          <img src="images/project-1.jpg" alt="Project 1 screenshot">
+          <h3>Project One</h3>
+          <p>Single-page app with charting and realtime updates.</p>
+          <a class="link" href="projects.html#project-one">View</a>
+        </article>
+
+        <article class="project-card reveal">
+          <img src="images/project-1.jpg" alt="Project 2 screenshot">
+          <h3>Project Two</h3>
+          <p>Design system and component library for a startup.</p>
+          <a class="link" href="projects.html#project-two">View</a>
+        </article>
+
+        <article class="project-card reveal">
+          <img src="images/project-1.jpg" alt="Project 3 screenshot">
+          <h3>Project Three</h3>
+          <p>E-commerce site optimized for conversions and accessibility.</p>
+          <a class="link" href="projects.html#project-three">View</a>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Jane Dev — Built with HTML, CSS & JS</p>
+      <nav aria-label="social">
+        <ul class="social">
+          <li><a href="#" aria-label="GitHub">GitHub</a></li>
+          <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

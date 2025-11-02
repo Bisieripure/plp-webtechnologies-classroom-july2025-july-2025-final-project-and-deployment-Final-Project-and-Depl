@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Jane Developer</title>
+  <meta name="description" content="Projects by Jane Developer" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Home"><svg width="36" height="36" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="currentColor"></rect></svg><span class="brand">Jane Dev</span></a>
+      <button class="nav-toggle" id="navToggle3" aria-controls="primaryNav3" aria-expanded="false" aria-label="Toggle navigation"><span class="hamburger"></span></button>
+      <nav id="primaryNav3" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container projects-list" aria-labelledby="projects-list-heading">
+      <h1 id="projects-list-heading">All Projects</h1>
+
+      <div class="filters">
+        <label for="filter">Filter:</label>
+        <select id="filter" aria-label="Filter projects">
+          <option value="all">All</option>
+          <option value="spa">SPA</option>
+          <option value="design-system">Design System</option>
+          <option value="ecommerce">E-commerce</option>
+        </select>
+      </div>
+
+      <div class="grid grid-3" id="projectsGrid">
+        <article class="project reveal" data-type="spa" id="project-one">
+          <img src="images/project-1.jpg" alt="Project one screenshot">
+          <h3>RealTime Dashboard</h3>
+          <p>SPA that displays live data and charts.</p>
+          <a href="#" class="link">Details</a>
+        </article>
+
+        <article class="project reveal" data-type="design-system" id="project-two">
+          <img src="images/project-1.jpg" alt="Design system screenshot">
+          <h3>Design System</h3>
+          <p>Component library and documentation site.</p>
+          <a href="#" class="link">Details</a>
+        </article>
+
+        <article class="project reveal" data-type="ecommerce" id="project-three">
+          <img src="images/project-1.jpg" alt="Ecommerce screenshot">
+          <h3>Shopify Redesign</h3>
+          <p>Custom theme optimized for conversions.</p>
+          <a href="#" class="link">Details</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year3"></span> Jane Dev</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
