@@ -1,0 +1,14 @@
+portfolio-site/
+├─ index.html
+├─ about.html
+├─ projects.html
+├─ contact.html
+├─ css/
+│  └─ style.css
+├─ js/
+│  └─ main.js
+├─ images/
+│  ├─ logo.svg
+│  ├─ hero.jpg
+│  └─ project-1.jpg
+├─ README.md
